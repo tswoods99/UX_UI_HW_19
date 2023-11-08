@@ -1,0 +1,190 @@
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; 
+        padding: 10px; 
+        margin: 5px 10px;
+    }}
+    @media (min-width: 768px) {}
+body{
+    background: white;
+    color: black;
+}
+
+.container{
+    padding: 15px 5%;
+}
+
+nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(83, 71, 23);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+
+}
+
+/* header */
+html {
+    scroll-behavior: smooth;
+}
+.headerText{
+    margin-top: 5%;
+    font-size: 45px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.large-text{
+    margin-top: 10px;
+    font-size: 54px;
+    font-weight: lighter;
+}
+.terrica{
+    font-size: 65px;
+    margin-top: 10px;
+    font-weight: lighter
+}
+.small-text{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.text {
+    float: left;
+    width: 50%;
+    padding: 20px;  
+}
+.headerImg{
+    float: 1;
+   text-align: right;
+}
+
+.headerImg img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+#pagearrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+}
+#arrowimg{
+    max-width: 150px;
+    max-height: 150px;
+}
+.image{
+    max-width: 5%;
+    max-height: 5%;
+}
+/* Skills Page */
+
+.skillstitle{
+    font-size: 62px;
+    text-align: center;
+    margin-top: 50px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+.row{
+    text-align: center;
+    padding: 20px;
+}
+.image{
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    margin: 20px;
+}
+.caption{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Work */
+.title-large{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.case-study-description{
+    font-size: 24px;
+    font-style: italic;
+}
+.worktitle{
+    text-align: center;
+    font-size: 62px;
+
+}
+.case-study{
+    display: flex; 
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 20px;
+}
+.case-study-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 40px; 
+}
+.hover-image img{
+    max-width: 100%;
+}
+/* Tillage */
+.imageContainer {
+    position: relative;
+    max-width: 100%;
+    text-align: left;
+}
+
+.tilimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+}
